@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="password">
+            <div class="password-value"></div>
+            <img src="./icons/icon-copy.svg">
+        </div>
+
+        <div class="characters">
+            <div class="character-length">
+                <p>Character Length</p>
+                <p class="length-value"></p>
+            </div>
+            <input type="range" min="0" max="20" value="0">
+
+            <div class="contents">
+                <div class="password-contents" data-option="uppercase">
+                    <div class="checkbox"></div>
+                    <p>Include Uppercase Letters</p>
+                </div>
+                <div class="password-contents" data-option="lowercase">
+                    <div class="checkbox"></div>
+                    <p>Include Lowercase Letters</p>
+                </div>
+                <div class="password-contents" data-option="numbers">
+                    <div class="checkbox"></div>
+                    <p>Include Numbers</p>
+                </div>
+                <div class="password-contents" data-option="symbols">
+                    <div class="checkbox"></div>
+                    <p>Include Symbols</p>
+                </div>
+            </div>
+
+            <div class="strength">
+                <p class="uppercase">Strength</p>
+                <div class="strength-indicator">
+                    <p class="uppercase strength-text"></p>
+                    <div class="strength-boxes">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="generate uppercase">Generate <img src="./icons/icon-arrow-right.svg"></button>
+        </div>
+    </div>
+
+    <script src="./java.js"></script>
+</body>
+</html>
