@@ -14,11 +14,6 @@ let settings = {
 
 lengthSlider.addEventListener('input', () => {
     lengthValue.innerHTML = lengthSlider.value;
-    
-
-    const percentage = ((lengthValue - lengthSlider.min) / (lengthSlider.max - lengthSlider.min)) * 100;
-
-    lengthSlider.style.background = `linear-gradient(to right, hsl(127, 100%, 82%)${percentage}%, hsl(248, 11%, 15%)${percentage}%)`;
 });
 
 options.forEach((option) => {
